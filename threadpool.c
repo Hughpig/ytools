@@ -25,6 +25,7 @@ SOFTWARE.
 #include <stdint.h>
 #include <stdio.h>
 #include "threadpool.h"
+#include <unistd.h>
 
 
 #if defined(WIN32) || defined(_WIN64)
@@ -525,4 +526,5 @@ void tpool_add_work_fcn(tpool_t *tdata, void *work_fcn)
 
     return;
 }
+
 
